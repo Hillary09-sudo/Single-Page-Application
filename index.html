@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Dictionary</h1>
+        <p>Search for word definitions, pronunciations, and more!</p>
+    </header>
+    <main class="container">
+        <form class="search-bar" id="search-form">
+            <input type="text" id="search-input" placeholder="Enter a word..." aria-label="Search for a word">
+            <button type="submit" id="search-button" aria-label="Submit search">Search</button>
+        </form>
+        <section class="results" id="results" aria-live="polite">
+            <!-- Placeholder for dynamic content -->
+            <div id="word-display" class="word" style="display: none;"></div>
+            <div id="phonetic-display" class="phonetic" style="display: none;"></div>
+            <div id="audio-display" class="audio" style="display: none;">
+                <audio id="audio-player" controls aria-label="Pronunciation audio"></audio>
+            </div>
+            <div id="definitions-display" class="definition" style="display: none;"></div>
+            <div id="synonyms-display" class="synonyms" style="display: none;">
+                <h3>Synonyms:</h3>
+                <ul id="synonyms-list"></ul>
+            </div>
+            <div id="error-display" class="error" style="display: none;"></div>
+            <div id="loading-display" class="loading" style="display: none;">Loading...</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dictionary App. all rights reserved made by Enock Ndeva</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
